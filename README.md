@@ -64,34 +64,36 @@
 
 ##Структура программы
 
-scr/
-│
-├── scripts/                    # Исполняемые скрипты
-│   ├── db_orders.py           # Работа с JSON базой
-│   ├── receive_order.py       # Приемка заказов
-│   ├── issue_order.py        # Выдача заказов
-│   ├── expired_orders.py     # Проверка просрочек
-│   └── export_data.py        # Экспорт и отчеты
-│
-├── data/                      # Базы данных
-│   ├── orders.json           # Основная база заказов
-│   └── statistics.json       # История статистики
-│
-├── logs/                      # Журналы операций
-│   ├── received_orders.csv   # Журнал приемки
-│   └── issue_history.csv     # Журнал выдачи
-│
-├── reports/                   # Отчеты
-│   ├── expired/              # Отчеты по просрочкам
-│   ├── daily/                # Ежедневные отчеты
-│   └── acts/                 # Акты возврата
-│
-├── backup/                    # Резервные копии
-│   └── orders_backup_*.json  # Бэкапы базы
-│
-└── exports/                   # Экспортированные данные
-    ├── csv/                  # Excel-файлы
-    └── json/                 # JSON-файлы
+-db_orders.py - Работа с JSON базой
+
+-receive_order.py - Приемка заказов
+
+-issue_order.py - Выдача заказов
+
+-expired_orders.py - Проверка просрочек
+
+-export_data.py - Экспорт и отчеты
+
+-orders.json - Основная база заказов
+
+-statistics.json - История статистики
+
+-received_orders.csv - Журнал приемки
+
+-issue_history.csv - Журнал выдачи
+
+-expired - Отчеты по просрочкам
+
+-daily - Ежедневные отчеты
+
+-acts - Акты возврата
+
+-orders_backup_*.json - Бэкапы базы
+
+-csv - Excel-файлы
+
+-json - JSON-файлы
+
 
 ---
 ## Используемые технологии
